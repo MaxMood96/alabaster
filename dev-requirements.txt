@@ -10,3 +10,4 @@ flake8==3.6.0
 # Install ourselves direct, even when being used on eg RTD. Otherwise we can't
 # dogfood our own changes until release to PyPI.
 -e .
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
