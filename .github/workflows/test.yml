@@ -65,7 +65,7 @@ jobs:
       run: |
         python -m pip install -U pip
         python -m pip install "releases==1.6.3"
-        python -m pip install -U "sphinx==${{ matrix.sphinx }}"
+        python -m pip install -U sphinx
         python -m pip install .
     - name: Run Sphinx
       run: sphinx-build ./docs ./build
