@@ -41,3 +41,24 @@ email = "jeff@bitprophet.org"
 
 [project.entry-points."sphinx.html_themes"]
 alabaster = 'alabaster'
+
+[tool.black]
+line_length = 79
+
+[tool.isort]
+line_length = 79
+profile = "black"
+
+[tool.ruff]
+target-version = "py38"  # Pin Ruff to Python 3.8
+line-length = 79
+exclude = [
+    '.git',
+]
+select = [
+    "E",   # pycodestyle
+    "F",   # Pyflakes
+    "W",   # pycodestyle
+    # plugins:
+    "I",   # isort
+]

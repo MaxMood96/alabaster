@@ -1,7 +1,6 @@
-from invoke import Collection
-from invocations import docs, travis, checks
+from invocations import checks, docs, travis
 from invocations.packaging import release
-
+from invoke import Collection
 
 ns = Collection(release, docs, travis, checks.blacken)
 ns.configure(
